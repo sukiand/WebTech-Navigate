@@ -1,13 +1,5 @@
-doctype html
-html(ng-app='firstTry')
-head 
-  title=title
-  script(src='/javascripts/lib.min.js')
-  script(src='/javascripts/app.min.js')
-  <!-- script(src='/javascripts/angular.min.js') -->
-  <!-- script(src='/javascripts/first.js') -->
-body
-  
+extends ../common/layout/layout.jade
+block content
   p #{title}
   div(ng-controller='firstController',class='col')
     span Test
@@ -16,7 +8,7 @@ body
     button(ng-click = 'update()') Message
     {{heading + message}}
 
-  div(ng-controller='databaseController')
+  div(ng-controller='tryController')
     span Data
     ul
       li(ng-repeat='website in websites')
