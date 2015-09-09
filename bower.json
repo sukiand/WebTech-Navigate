@@ -1,0 +1,20 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "authors": [
+    "Changyun Gong <cgong4@jhu.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.5",
+    "jquery": "~2.1.4",
+    "semantic": "semantic-ui#~2.1.3"
+  }
+}
