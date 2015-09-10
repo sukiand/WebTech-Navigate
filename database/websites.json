@@ -4,7 +4,7 @@
     "name":"node.js",
     "URL":"https://nodejs.org",
     "icon":null,
-    "type":"Backend Server",
+    "tags":["backend server", "official"],
     "childtype":null,
     "description":"good"
   },
@@ -20,7 +20,7 @@
     "name":"Ruby on Rails",
     "URL":"http://rubyonrails.org",
     "icon":null,
-    "type":"Backend Server",
+    "tags":["backend server", "official"],
     "childtype":null,
     "description":"good"
   },
@@ -35,7 +35,7 @@
     "name":"nginx",
     "URL":"http://nginx.org/en/",
     "icon":null,
-    "type":"Web Server",
+    "type":["web server","proxy","official"],
     "childtype":null,
     "description":"good"
   },
@@ -50,7 +50,7 @@
     "name":"lighttpd",
     "URL":"http://www.lighttpd.net",
     "icon":null,
-    "type":"Web Server",
+    "type":["Web Server","official"],
     "childtype":null,
     "description":"good"
   },
@@ -65,7 +65,7 @@
     "name":"apache",
     "URL":"http://httpd.apache.org",
     "icon":null,
-    "type":"Web Server",
+    "type":["Web Server","official"],
     "childtype":null,
     "description":"good"
   },
