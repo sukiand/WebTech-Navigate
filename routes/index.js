@@ -15,6 +15,10 @@ router.get('/about', function(req, res, next) {
     res.render('common/menubar/index', { title: 'Web Hotpot' });
 });
 
+router.get('/qa', function(req, res, next) {
+    res.render('common/menubar/index', { title: 'Web Hotpot' });
+});
+
 router.get('/components/:mod/:page', function(req, res, next) {
   var mod = req.params.mod;
   var page = req.params.page;

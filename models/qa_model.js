@@ -4,5 +4,5 @@ var QaSchema = new Schema({
 
 });
 
-var qas = mongoose.model('QAs',QaSchema);
+var qas = mongoose.model('qa',QaSchema);
 module.exports = qas;

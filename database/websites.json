@@ -107,7 +107,7 @@
 }
 
 {
-    "name": "MonoDB",
+    "name": "MongoDB",
     "URL": "https://www.mongodb.org/",
     "icon": "mongodb.jpg",
     "category": "Database",
@@ -162,6 +162,66 @@
     "language": null,
     "tags":["official","version control","tool"],
     "descriptions":"have to use",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "Wamp",
+    "URL": "http://www.wampserver.com/en/",
+    "icon": "wamp.png",
+    "category": "Web Server",
+    "language": null,
+    "tags":["official","server"],
+    "descriptions":"test bed for malware!",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "Lamp",
+    "URL": "https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu",
+    "icon": "lamp.png",
+    "category": "Web Server",
+    "language": null,
+    "tags":["server"],
+    "descriptions":"a lot to install",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "Hexo",
+    "URL": "http://hexo.io/",
+    "icon": "hexo.png",
+    "category": "Web Server",
+    "language": null,
+    "tags":["official","server","generator","blog"],
+    "descriptions":"used for github page",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "Hugo",
+    "URL": "https://gohugo.io/",
+    "icon": "hugo.png",
+    "category": "Web Server",
+    "language": null,
+    "tags":["official","server","generator","engine"],
+    "descriptions":"useed for github page",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "D3.js",
+    "URL": "http://d3js.org/",
+    "icon": "d3js.png",
+    "category": "Front End",
+    "language": ['javascript','css'],
+    "tags":["official","front","cool"],
+    "descriptions":"high level virtualization",
     "click": 0,
     "inUse": true
 }

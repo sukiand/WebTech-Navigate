@@ -1,0 +1,32 @@
+{
+    "Q":"What is your website made of?",
+    "A":"All by javascripts! Semantic UI + AnjularJS + node.js",
+    "sequence":10
+}
+
+{
+    "Q":"Websites need database?",
+    "A":"Static websites need no database. If the backend language is object-oriented language, it is high time to try NoSQL databases like mongodb!",
+    "sequence":20
+}
+
+{
+    "Q": "How can I made my personal blog?",
+    "A": "We recommand static website generator like Hexo and Hugo. Also you can put your blog to github page. It's free!",
+    "sequence":30
+}
+
+{
+    "Q": "where to put my website?",
+    "A": "There is a one year free-trial at AWS EC2, with a 1GB server. Don''t forget to buy a domain for your own and bind the IP address.",
+    "sequence":40
+}
+
+{
+    "Q":"Any tool you think brillint during building the website?",
+    "A":"Managing tools like NPM, BOWER, GRUNT and GIT.",
+    "sequence":50
+
+}
+
+

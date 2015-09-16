@@ -8,7 +8,7 @@ block content
                 ng-controller="MenuController"
                 )
                 a(class="item {{isActive('/')}}", href='/') Home
-                a(class="item {{isActive('/category')}}", href='/category') category
+                a(class="item {{isActive('/qa')}}", href='/qa') Q&A
                 a(class="item {{isActive('/about')}}", href='/about') About us
                 // a(class="item", href='/index') Home
                 // a(class="item", href='/category') category
@@ -27,3 +27,21 @@ block content
             div(class="ui huge primary button") Get Started
                 i(class="right arrow icon")
     div(ng-view)
+
+    div(class='ui inverted vertical footer segment',style='margin-top: 10em')
+        div(class='ui container',style='margin-top: 4em; margin-bottom: 4em')
+            div(class='ui stackable inverted divided equal height stackable grid')
+                div(class='three wide column')
+                    h4(class='ui inverted header',style='margin-top: 2em') Contact 
+                    div(class='ui inverted link list')
+                        a(class='item') Sitemap
+                        a(class='item') Email 
+                        a(class='item') Phone 
+                div(class='three wide column')
+                    h4(class='ui inverted header',style='margin-top: 2em') Service
+                    div(class='ui inverted link list')
+                        a(class='item') Job
+                        a(class='item') Work 
+                        a(class='item') Career 
+                div(class='three wide column',style='margin-top: 2em')
+                     img(class='ui medium image',src='/images/jhu.png')

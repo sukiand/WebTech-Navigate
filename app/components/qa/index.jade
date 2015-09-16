@@ -1,0 +1,17 @@
+div(class='ui container',style='margin-top: 3em') 
+    // div(ng-repeat='qa in qas')
+    //     h1 {{qa.Q}}
+    //     h2 {{qa.A}}
+    div(class='ui segments',ng-repeat='qa in qas')
+        // div(class='ui secondary segment')
+        div(class='ui brown icon message',style='margin: 0em')
+            i(class='help icon')
+            div(class='content')
+                div(class='header') {{"&nbsp&nbsp&nbsp&nbsp"+qa.Q}}
+        // div(class='ui segment')
+        div(class='ui olive icon message',style='margin: 0em')
+            i(class='pointing right icon')
+            div(class='content')
+                div(class='header') {{qa.A}}
+
+

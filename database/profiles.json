@@ -1,6 +1,7 @@
 {
     "name": "Changyun Gong",
     "avatar": "gcy.jpg",
+    "avatar_hidden": "gcy_hidden.jpg",
     "email": "cgong4@jhu.edu",
     "linkedin": "https://www.linkedin.com/in/changyungong",
     "blog":"http://sukiand.github.io/",
@@ -10,7 +11,8 @@
 
 {
     "name": "Zhiyue Zu",
-    "avatar":"zyz.jpg",
+    "avatar":"zzy.jpg",
+    "avatar_hidden":"zzy_hidden.jpg",
     "email":"zuzhiyue@gmail.com",
     "linkedin":"https://www.linkedin.com/in/zuzhiyue",
     "blog":"http://tissuefluid.github.io",
