@@ -133,7 +133,7 @@
 {
     "name":"Django", 
     "URL": "https://www.djangoproject.com/",
-    "icon": "django.png",
+    "icon": "django.jpg",
     "category": "Backend",
     "language": ["python"],
     "tags":["official","framework"],

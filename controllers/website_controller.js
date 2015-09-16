@@ -15,7 +15,7 @@ exports.getWebsites = function(req,res,next){
         res.json(404,'not found');
       }
       else{
-        console.log(websites);
+        // console.log(websites);
         res.json(websites);
       }
     });
@@ -24,7 +24,7 @@ exports.getWebsites = function(req,res,next){
 exports.getOneWebsite= function(req,res,next){
   websites.findOne()
     .exec(function(err,website){
-      console.log(website);
+      // console.log(website);
       if(!website){
         res.json(404,'not found');
       }

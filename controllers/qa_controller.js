@@ -8,7 +8,7 @@ exports.getQas= function(req,res,next){
         res.json(404,'not found');
       }
       else{
-        console.log(qas);
+        // console.log(qas);
         res.json(qas);
       }
     });

@@ -8,7 +8,7 @@ exports.getProfiles = function(req,res,next){
                 res.json(404,'not found');
             }
             else{
-                console.log(profiles);
+                // console.log(profiles);
                 res.json(profiles);
             }
         })
