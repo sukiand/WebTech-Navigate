@@ -1,8 +1,11 @@
 var express = require('express');
-var router = express.Router();
-var websites = require('../controllers/website_controller.js');
+var api = express.Router();
+var profiles = require('../controllers/profile_controller.js');
+var websites= require('../controllers/website_controller.js');
+var qas = require('../controllers/qa_controller.js');
 
+api.get('/websites',websites.getWebsites);
+api.get('/profiles',profiles.getProfiles);
+api.get('/qas',qas.getQas);
 
-router.get('/websites', websites.getWebsites);
-
-module.exports = router;
+module.exports = api;
