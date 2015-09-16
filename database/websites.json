@@ -1,76 +1,168 @@
 {
-  "id":"00000001",
-  "info":{
     "name":"node.js",
     "URL":"https://nodejs.org",
-    "icon":null,
-    "tags":["backend server", "official"],
-    "childtype":null,
-    "description":"good"
-  },
-  "show":{
+    "icon":"nodejs.png",
+    "category":"Backend Server",
+    "language":["javascript"],
+    "tags":["official","backend server","js"],
+    "description":"powerful",
     "click":0,
+    "inUse":true
+}
+
+{
+    "name": "AngularJS",
+    "URL": "https://angularjs.rog",
+    "icon": "angularjs.jpg",
+    "category": "Front End",
+    "language":["javascript"],
+    "tags": ["official","front end","js","MVC"],
+    "descriptions":"MVC",
+    "click": 0,
     "inUse": true
-  }
 }
 
 {
-  "id":"00000002",
-  "info":{
-    "name":"Ruby on Rails",
-    "URL":"http://rubyonrails.org",
-    "icon":null,
-    "tags":["backend server", "official"],
-    "childtype":null,
-    "description":"good"
-  },
-  "show":{
-    "inUse":true
-  }
+    "name": "bootstrap",
+    "URL": "http://getbootstrap.com/",
+    "icon": "bootstrap.jpg",
+    "category": "Front End",
+    "language":["javascript"],
+    "tags":["official","front end","stylesheet"],
+    "descriptions":"",
+    "click": 0,
+    "inUse": true
 }
 
 {
-  "id":"00000003",
-  "info":{
-    "name":"nginx",
-    "URL":"http://nginx.org/en/",
-    "icon":null,
-    "type":["web server","proxy","official"],
-    "childtype":null,
-    "description":"good"
-  },
-  "show":{
-    "inUse":true
-  }
+    "name": "Semantic UI",
+    "URL": "http://semantic-ui.com/",
+    "icon": "semantic.png",
+    "category": "Front End",
+    "language":["javascript","css"],
+    "tags": ["official","front end","stylesheet"],
+    "descriptions":"beautiful",
+    "click": 0,
+    "inUse": true
 }
 
 {
-  "id":"00000004",
-  "info":{
-    "name":"lighttpd",
-    "URL":"http://www.lighttpd.net",
-    "icon":null,
-    "type":["Web Server","official"],
-    "childtype":null,
-    "description":"good"
-  },
-  "show":{
-    "inUse":true
-  }
+    "name": "Ruby on Rails",
+    "URL": "http://rubyonrails.org/",
+    "icon": "ror.jpg",
+    "category": "Backend Server",
+    "language":["ruby"],
+    "tags":["official","backend server","ror"],
+    "descriptions":"startups",
+    "click": 0,
+    "inUse": true
 }
 
 {
-  "id":"00000005",
-  "info":{
-    "name":"apache",
-    "URL":"http://httpd.apache.org",
-    "icon":null,
-    "type":["Web Server","official"],
-    "childtype":null,
-    "description":"good"
-  },
-  "show":{
-    "inUse":true
-  }
+    "name": "lighttpd",
+    "URL": "http://www.lighttpd.net/",
+    "icon": "lighttpd.png",
+    "category": "Web Server",
+    "language": null,
+    "tags":["official","server"],
+    "descriptions":"fine",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "nginx",
+    "URL": "http://nginx.org/en/",
+    "icon": "nginx.png",
+    "category": "Web Server",
+    "language": null,
+    "tags":["official","server","proxy"],
+    "descriptions":"powerful proxy",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "apache",
+    "URL": "http://httpd.apache.org/",
+    "icon": "apache.jpg",
+    "category": "Web Server",
+    "language": null,
+    "tags":["official","server","proxy"],
+    "descriptions":"broad use",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "mySQL",
+    "URL": "https://www.mysql.com/",
+    "icon": "mySQL.jpg",
+    "category": "Database",
+    "language": ["SQL"],
+    "tags":["official","database"],
+    "descriptions":"OK",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "MonoDB",
+    "URL": "https://www.mongodb.org/",
+    "icon": "mongodb.jpg",
+    "category": "Database",
+    "language": ["SQL"],
+    "tags":["official","database","NoSQL"],
+    "descriptions":"NoSQL",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "web.py" ,
+    "URL":"http://webpy.org/",
+    "icon": "webpy.png",
+    "category": "Backend",
+    "language": ["python"],
+    "tags":["official","backend","framework"],
+    "descriptions":"simple",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name":"Django", 
+    "URL": "https://www.djangoproject.com/",
+    "icon": "django.png",
+    "category": "Backend",
+    "language": ["python"],
+    "tags":["official","framework"],
+    "descriptions":"are you familiar",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "Grunt", 
+    "URL": "http://gruntjs.com/",
+    "icon": "grunt.jpg",
+    "category": "Tools",
+    "language": ["javascrpt"],
+    "tags":["official","tool"],
+    "descriptions":"nice to use",
+    "click": 0,
+    "inUse": true
+}
+
+{
+    "name": "Git",
+    "URL": "https://git-scm.com/",
+    "icon": "git.png",
+    "category": "Tools",
+    "language": null,
+    "tags":["official","version control","tool"],
+    "descriptions":"have to use",
+    "click": 0,
+    "inUse": true
 }
 
