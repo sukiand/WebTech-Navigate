@@ -9,8 +9,9 @@ module.exports = function(grunt){
       bower_js:{
         src:[
           'bower_components/angular/angular.min.js',
+          'bower_components/angular-route/angular-route.min.js',
           'bower_components/jquery/dist/jquery.min.js',
-          'bower_components/semantic/dist/semantic.min.js'
+          'bower_components/semantic/dist/semantic.min.js',
         ],
         dest: 'public/javascripts/lib.min.js',
         nonull: true
@@ -23,7 +24,7 @@ module.exports = function(grunt){
         nonull: true
       },
     },
-    
+
     jshint:{
       files:['Gruntfile.js','app/**/*.js'],
       options: {

@@ -1,10 +1,27 @@
 extends ../layout/layout
 
 block content
-    div(class="ui container")
-        div(
-            class="ui fixed top stackable compact menu"
-            ng-controller="MenuController"
-            )
-            div(class="header item")
+    div(class="ui inverted vertical masthead center aligned segment")
+        div(class="ui container")
+            div(
+                class="ui large secondary inverted pointing menu"
+                ng-controller="MenuController"
+                )
+                a(class="item {{isActive('/index')}}", href='/index') Home
+                a(class="item {{isActive('/category')}}", href='/category') category
+                a(class="item {{isActive('/about')}}", href='/about') About us
+                // a(class="item", href='/index') Home
+                // a(class="item", href='/category') category
+                // a(class="item", href='/about') About us
 
+                div(class="right item")
+                    div(class="ui action input")
+                        input(type="text", placeholder="search..")
+                        button(class="ui icon button")
+                            i(class="search icon")
+        div(class="ui text container")
+            h1(class="ui inverted header",style="margin-top: 3em; font-size: 4em;") WebTech Navigate
+            h2 share techniques for building a website
+            div(class="ui huge primary button") Get Started
+                i(class="right arrow icon")
+    div(ng-view)

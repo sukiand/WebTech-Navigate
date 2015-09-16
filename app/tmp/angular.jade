@@ -1,14 +1,15 @@
 extends ../common/layout/layout.jade
 block content
   p #{title}
-  div(ng-controller='firstController',class='col')
+  div(ng-controller='firstController as xxx',class='col')
     span Test
     input(type='text',ng-model='first')
     input(type='text',ng-model='second')
+    p {{xxx.first}}
     button(ng-click = 'update()') Message
-    {{heading + message}}
+    {{first.heading + first.message}}
 
-  div(ng-controller='tryController')
+  div(ng-controller='tryController as try')
     span Data
     ul
       li(ng-repeat='website in websites')
