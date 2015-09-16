@@ -1,2 +1,37 @@
-div(class="ui container")
-    h1 test main
+div(class="ui text container" style="margin-top: 50px;")
+  div(class="ui segments")
+    div(
+      class="ui segment"
+      ng-repeat="category in categories track by category._id"
+      )
+      a(
+        class="ui red massive ribbon label"
+        ) {{category._id}}
+      a(
+        class="ui teal label"
+        ng-repeat="lang in category.languages"
+        ) {{lang}}
+      p(
+        ng-if="category.websites.length > 0"
+        )
+        div(class="ui items")
+          div(
+            class="item"
+            ng-repeat="website in category.websites track by website._id"
+            )
+            div(class="ui small image")
+              img(
+                ng-src="/images/icons/{{website.icon}}"
+                alt="{{website.name}}"
+              )
+            div(class="content")
+              a(class="header", ng-href="{{website.URL}}") {{website.name}}
+              div(class="meta")
+                span Description
+              div(class="description")
+                p {{website.descriptions}}
+              div(class="extra")
+                div(
+                  class="ui yellow label"
+                  ng-repeat="tag in website.tags"
+                  ) {{tag}}

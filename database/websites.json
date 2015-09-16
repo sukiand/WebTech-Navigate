@@ -2,9 +2,9 @@
     "name":"node.js",
     "URL":"https://nodejs.org",
     "icon":"nodejs.png",
-    "category":"Backend Server",
+    "category":"Backend",
     "language":["javascript"],
-    "tags":["official","backend server","js"],
+    "tags":["official","backend","js"],
     "description":"powerful",
     "click":0,
     "inUse":true
@@ -50,9 +50,9 @@
     "name": "Ruby on Rails",
     "URL": "http://rubyonrails.org/",
     "icon": "ror.jpg",
-    "category": "Backend Server",
+    "category": "Backend",
     "language":["ruby"],
-    "tags":["official","backend server","ror"],
+    "tags":["official","backend","ror"],
     "descriptions":"startups",
     "click": 0,
     "inUse": true
