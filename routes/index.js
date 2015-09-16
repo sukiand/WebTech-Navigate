@@ -3,11 +3,11 @@ var router = express.Router();
 var websites = require('../controllers/website_controller.js');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.redirect('/angular');
+router.get('/index', function(req, res, next) {
+  res.redirect('/');
 });
 
-router.get('/index', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('common/menubar/index', { title: 'Express' });
 });
 
@@ -24,8 +24,8 @@ router.get('/components/:mod/:page', function(req, res, next) {
   res.render('components/' + mod + '/' + page, { title: 'Express' });
 });
 
-router.get('/angular', function(req, res, next) {
-  res.render('tmp/angular', { title: 'Express' });
-});
+// router.get('/angular', function(req, res, next) {
+//   res.render('tmp/angular', { title: 'Express' });
+// });
 
 module.exports = router;
