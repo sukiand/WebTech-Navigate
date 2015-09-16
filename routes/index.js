@@ -7,16 +7,22 @@ router.get('/index', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('common/menubar/index', { title: 'Web Hotpot' });
+    res.render('common/menubar/index', { title: 'Web Hotpot' ,port: ' 0'+(req.app.locals.settings.port -2999).toString()});
 });
 
 
 router.get('/about', function(req, res, next) {
-    res.render('common/menubar/index', { title: 'Web Hotpot' });
+    res.render('common/menubar/index', { title: 'Web Hotpot' ,port: ' 0'+(req.app.locals.settings.port -2999).toString()});
+    // res.render('common/menubar/index', { title: 'Web Hotpot' });
 });
 
 router.get('/qa', function(req, res, next) {
-    res.render('common/menubar/index', { title: 'Web Hotpot' });
+    res.render('common/menubar/index', { title: 'Web Hotpot' ,port: ' 0'+(req.app.locals.settings.port -2999).toString()});
+    // res.render('common/menubar/index', { title: 'Web Hotpot' });
+});
+
+router.get('/test', function(req, res, next) {
+    res.json(req.app.locals.settings.port);
 });
 
 router.get('/components/:mod/:page', function(req, res, next) {

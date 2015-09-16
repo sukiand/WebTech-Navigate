@@ -9,7 +9,9 @@ div(class='ui container',style='margin-top: 50px', ng-controller='aboutControlle
                 div(class='meta') {{profile.title}}
                 div(class='description') {{profile.description}}
                 div(class='extra') email: {{profile.email}}
+                div(class='extra')
+                    a(href='/PDFs/{{profile.resume}}',target='_blank') Resume
                 div(class='extra') 
-                    a(href='{{profile.linkedin}}') linkedin
+                    a(href='{{profile.linkedin}}') Linkedin
                 div(class='extra')
                     a(href='{{profile.blog}}') GitHub Page
