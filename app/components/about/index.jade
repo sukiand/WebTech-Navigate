@@ -1,2 +1,22 @@
-div(class='ui container')
-    h2 test about
+div(class='ui container', ng-controller='aboutController')
+    div(class='ui link cards')
+        div(class='cards',ng-repeat='profile in profiles')
+            div(class='image')
+                img(src="/images/profile/{{profile.avatar}}", style="width:290px;height:290px")
+            div(class='content')
+                div(class='header', style="margin-top:5em;font-size: 1em; line-height: 1.4285em") {{profile.title}}
+                div(class='description', style="margin-top: 5em") {{profile.description}}
+
+    // script(type="text/javascript")
+    //     /* * * CONFIGURATION VARIABLES: THIS CODE IS ONLY AN EXAMPLE * * */
+    //     var disqus_shortname = 'webtechnavigate'; // Required - Replace example with your forum shortname
+    //     var disqus_identifier = 'comments on websites';
+
+    //     /* * * DON'T EDIT BELOW THIS LINE * * */
+    //     (function() {
+    //         var dsq = document.createElement('script'); 
+    //         dsq.type = 'text/javascript'; 
+    //         dsq.async = true;
+    //         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    //         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();
+

@@ -6,7 +6,7 @@ var config = function($routeProvider, $locationProvider){
     $routeProvider.
         when('/',{controller:'MainController', templateUrl:'/components/home/index'}).
         when('/category',{controller:'MainController', templateUrl:'/components/home/index'}).
-        when('/about',{controller:'ProfileController', templateUrl:'/components/about/index'}).
+        when('/about',{controller:'aboutController', templateUrl:'/components/about/index'}).
         otherwise({redirectTo:'/'});
 };
 WebTech.config(['$routeProvider','$locationProvider',config]);

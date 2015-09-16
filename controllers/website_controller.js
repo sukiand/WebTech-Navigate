@@ -15,9 +15,10 @@ exports.getWebsites = function(req,res,next){
         res.json(404,'not found');
       }
       else{
+        console.log(websites);
         res.json(websites);
       }
-    })
+    });
 }
 
 exports.getOneWebsite= function(req,res,next){
