@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "pretest": "grunt development &",
-    "test": "NODE_ENV=development node ./bin/www3000 & NODE_ENV=development node ./bin/www3001 & NODE_ENV=development node ./bin/www3002 & NODE_ENV=development node ./bin/www3003 & NODE_ENV=development node ./bin/www3004",
+    "test": "NODE_ENV=development node ./bin/www",
     "prestart": "grunt",
-    "start": "NODE_ENV=production node ./bin/www3000 & NODE_ENV=production node ./bin/www3001 & NODE_ENV=production node ./bin/www3002 & NODE_ENV=production node ./bin/www3003 & NODE_ENV=production node ./bin/www3004"
+    "start": "NODE_ENV=production node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.13.2",

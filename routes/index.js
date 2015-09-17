@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var serverNo = '001';
 
 /* GET home page. */
 router.get('/index', function(req, res, next) {
@@ -7,17 +8,17 @@ router.get('/index', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-    res.render('common/menubar/index', { title: 'Web Hotpot' ,port: ' 0'+(req.app.locals.settings.port -2999).toString()});
+    res.render('common/menubar/index', { title: 'Web Hotpot' ,server: serverNo});
 });
 
 
 router.get('/about', function(req, res, next) {
-    res.render('common/menubar/index', { title: 'Web Hotpot' ,port: ' 0'+(req.app.locals.settings.port -2999).toString()});
+    res.render('common/menubar/index', { title: 'Web Hotpot' ,server: serverNo});
     // res.render('common/menubar/index', { title: 'Web Hotpot' });
 });
 
 router.get('/qa', function(req, res, next) {
-    res.render('common/menubar/index', { title: 'Web Hotpot' ,port: ' 0'+(req.app.locals.settings.port -2999).toString()});
+    res.render('common/menubar/index', { title: 'Web Hotpot' ,port: serverNo});
     // res.render('common/menubar/index', { title: 'Web Hotpot' });
 });
 
