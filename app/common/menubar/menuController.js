@@ -4,4 +4,7 @@ var MenuController = function($scope, $location){
         return (path == $location.path() ? "active" : "");
     };
 };
-WebTech.controller('MenuController', ['$scope','$location',MenuController]);
+
+angular
+    .module('WebTech')
+    .controller('MenuController', ['$scope','$location',MenuController]);

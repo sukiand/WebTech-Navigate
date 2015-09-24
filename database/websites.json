@@ -226,3 +226,15 @@
     "inUse": true
 }
 
+{
+    "name": "React",
+    "URL": "https://facebook.github.io/react/",
+    "icon": "react.png",
+    "category": "Backend",
+    "language": ['javascript'],
+    "tags":["official","backend","cool"],
+    "descriptions":"modules",
+    "click": 0,
+    "inUse": true
+}
+

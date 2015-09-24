@@ -9,9 +9,17 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var apis = require('./routes/api');
 
+//d3.js
+// var d3 = require("d3");
+// var jsdom = require("jsdom");
+
+// var documentd3 = jsdom.jsdom();
+// var svg = d3.select(documentd3.body).append("svg");
+
 //database
 var mongoose = require('mongoose');
-var conn = mongoose.connect('mongodb://localhost/navigate');
+// var conn = mongoose.connect('mongodb://localhost/navigate');
+var conn = mongoose.connect('mongodb://172.31.25.186/navigate');
 //models
 require('./models/websites_model.js');
 require('./models/profiles_model.js');

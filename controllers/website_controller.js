@@ -33,3 +33,22 @@ exports.getOneWebsite= function(req,res,next){
       }
     })
 }
+
+exports.getWebTags = function(req,res,next){
+  websites.aggregate({
+    $project: {
+      _id: 0,
+        tags: 1
+      }
+    }
+  )
+    .exec(function(err,tags){
+      if(!websites){
+        res.json(404,'not found');
+      }
+      else{
+        // console.log(websites);
+        res.json(tags);
+      }
+    });
+}

@@ -1,11 +1,8 @@
-angular
-.module('WebTech')
-.controller('MainController', ['$scope', '$http', MainController]);
-
-function MainController($scope, $http) {
+function MainController($scope, $http,siteService,cloudService) {
   $scope.categories = [];
 
-  $http.get('/api/websites').then(function (response) {
+  // siteService.write('hello success');
+  siteService.get().then(function (response) {
     $scope.categories = response.data;
     $scope.categories.forEach(function (cate) {
       var languageSet = new Set();
@@ -16,10 +13,42 @@ function MainController($scope, $http) {
           });
         }
       });
+
       cate.languages = [];
       languageSet.forEach(function (language) {
         cate.languages.push(language);
       });
     });
   });
+
+  siteService.tags().then(function(response){
+      var tagSets = response.data;
+      var words = [];
+      // console.log(tagSets);
+      tagSets.forEach(function(tagSet){
+          if(tagSet.tags){
+              // console.log(tagSet.tags);
+              tagSet.tags.forEach(function(tag){
+                  words.push(tag);
+              });
+          }
+      });
+        // console.log(words);
+        words.sort();
+        var unique_words=[];
+        words.forEach(function(word){
+            if(word != unique_words[unique_words.length-1]){
+                unique_words.push(word);
+            }
+        });
+        console.log(unique_words);
+      cloudService.cloud(unique_words,1000,400,"test");
+  });
+
+  // cloudService.cloud(["haha","test","try","hahahahahahahaha","what","a","fucking","daydayday"],1000,300,"test");
 }
+
+angular
+    .module('WebTech')
+    .controller('MainController', ['$scope', '$http','siteService','cloudService', MainController]);
+
