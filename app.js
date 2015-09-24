@@ -18,8 +18,8 @@ var apis = require('./routes/api');
 
 //database
 var mongoose = require('mongoose');
-// var conn = mongoose.connect('mongodb://localhost/navigate');
-var conn = mongoose.connect('mongodb://172.31.25.186/navigate');
+var conn = mongoose.connect('mongodb://localhost/navigate');
+// var conn = mongoose.connect('mongodb://172.31.25.186/navigate');
 //models
 require('./models/websites_model.js');
 require('./models/profiles_model.js');
