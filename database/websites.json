@@ -238,3 +238,15 @@
     "inUse": true
 }
 
+{
+    "name": "jQuery",
+    "URL": "https://jquery.com/",
+    "icon": "jquery.png",
+    "category": "Front End",
+    "language": ['javascript'],
+    "tags":["official"],
+    "descriptions":"basic",
+    "click": 0,
+    "inUse": true
+}
+
