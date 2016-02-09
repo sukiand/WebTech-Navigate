@@ -26,9 +26,13 @@ block content
         div(class="ui text container")
             h1(class="ui inverted header",style="margin-top: 10px; font-size: 4em;") Web HotPot
             h2 share popular, amazing techniques for building a website
-            div(class="ui huge primary button") Get Started
+            a(class="ui huge primary button",id = 'scrollToContent',value = 'Start') Get Started
                 i(class="right arrow icon")
     div(ng-view)
+
+    div(id='BackToTop',style='background-color:#DDD')
+        button(class='ui icon button', style='bottom:50px;right:50px;z-index:11;position:fixed;',hidden='true', id='backToTop',value='Back To Top')
+            i(class = 'big angle up icon')
 
     div(class='ui inverted vertical footer segment',style='margin-top: 10em')
         div(class='ui container',style='margin-top: 4em; margin-bottom: 4em')

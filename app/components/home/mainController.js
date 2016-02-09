@@ -24,16 +24,13 @@ function MainController($scope, $http,siteService,cloudService) {
   siteService.tags().then(function(response){
       var tagSets = response.data;
       var words = [];
-      // console.log(tagSets);
       tagSets.forEach(function(tagSet){
           if(tagSet.tags){
-              // console.log(tagSet.tags);
               tagSet.tags.forEach(function(tag){
                   words.push(tag);
               });
           }
       });
-        // console.log(words);
         words.sort();
         var unique_words=[];
         words.forEach(function(word){
@@ -41,7 +38,6 @@ function MainController($scope, $http,siteService,cloudService) {
                 unique_words.push(word);
             }
         });
-        console.log(unique_words);
       cloudService.cloud(unique_words,1000,400,"test");
   });
 

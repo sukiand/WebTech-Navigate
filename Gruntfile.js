@@ -67,6 +67,12 @@ module.exports = function(grunt){
           cwd: 'bower_components/angular/',
           src: ['angular.min.js.map'],
           dest: 'public/javascripts/'
+        },
+        {
+          expand: true,
+          cwd: 'bower_components/jquery/dist/',
+          src:['jquery.min.map'],
+          dest: 'public/javascripts/'
         }]
       }
     }
