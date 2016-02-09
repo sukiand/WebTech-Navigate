@@ -1,23 +1,42 @@
-var whereYouWantYourButtonToAppear = 400;
+var length_of_header = 380;
+var speed_of_moving_window = 750;
 
-$(window).scroll(function(){
+$(document).ready(function(){
+    $('#backToTop').hide();
+
+    $(window).scroll(function(){
         var position = $(window).scrollTop();
-            if(position > whereYouWantYourButtonToAppear)
-{
+
+        if(position > length_of_header)
+        {
             $('#backToTop').fadeIn();
-}
-    else
-    {
-                $('#backToTop').fadeOut();
-    }
+            $('#menu').attr('class','ui large secondary pointing menu');
+            $('#menu_fixed').attr('class','following bar light fixed');
+        }
+        else
+        {
+            $('#backToTop').fadeOut();
+            $('#menu').attr('class','ui large secondary inverted pointing menu');
+            $('#menu_fixed').attr('class','following bar');
+        }
+    });
 
-});
-
-$('#backToTop').on('click', function(){
-        $(window).scrollTop(0);
+    $('#backToTop').on('click', function(e){
+       // $(window).scrollTop(0);
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, speed_of_moving_window);
             $(this).fadeOut();
+    });
+
+    $('#scrollToContent').on('click',function(e){
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 540
+        }, speed_of_moving_window);
+        //  $(window).scrollTop(550);
+    });
+
 });
 
-$('#scrollToContent').on('click',function(){
-    $(window).scrollTop(550);
-});
