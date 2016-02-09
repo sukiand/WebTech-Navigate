@@ -6,5 +6,4 @@
 
   ga('create', 'UA-73415471-1', 'auto');
   ga('send', 'pageview');
-  console.log("google load completed");
 

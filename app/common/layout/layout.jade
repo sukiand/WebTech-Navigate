@@ -5,9 +5,12 @@ html
     meta(name='viewpoint',content='width=device-width,initial-scale=1.0,maximun-scale=1.0')
     base(href='/')
     title #{title}
+    link(rel='stylesheet',type='text/css',href='/stylesheets/app.min.css')
     link(rel='stylesheet',type='text/css',href='/stylesheets/lib.min.css')
   body(ng-app='WebTech')
+    block menubar
     block content
+    block footer
     script(src='/javascripts/lib.min.js')
     script(src='/javascripts/app.min.js')
     script(src='/javascripts/google-analysis.js')

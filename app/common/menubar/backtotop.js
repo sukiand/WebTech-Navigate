@@ -1,6 +1,12 @@
 var length_of_header = 380;
 var speed_of_moving_window = 750;
 
+$body = $('body');
+$(document).on({
+    ajaxStart:function(){$body.addClass('loading');},
+    ajaxStop:function(){$body.removeClass('loading');}
+});
+
 $(document).ready(function(){
     $('#backToTop').hide();
 

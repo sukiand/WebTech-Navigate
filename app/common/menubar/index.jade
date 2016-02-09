@@ -1,12 +1,11 @@
 extends ../layout/layout
 
-block content
+block menubar
     div(class="ui inverted vertical masthead center aligned segment")
         div(class="ui container")
             div(
                 class="ui large secondary inverted pointing menu",
                 ng-controller="MenuController",
-                style = 'border:0px',
                 id = 'menu'
                 )
                 a(class="item {{isActive('/')}}", href='/') Home
@@ -17,33 +16,36 @@ block content
                 // a(class="item", href='/about') About us
                 div(class="ui right aligned container")
                     div(class='ui text container')
-                        div(class='header', style='padding-top:10px;') bowl No.#{server}  at your service
+                        div(class='header',id='bowl_NO') bowl No.#{server}  at your service
         img(class='ui centered medium image', src='/images/logo.png')
         div(class="ui text container")
-            h1(class="ui inverted header",style="margin-top: 10px; font-size: 4em;") Web HotPot
-            h2 share popular, amazing techniques for building a website
+            h1(class='ui inverted header',id='title1') Web HotPot
+            h3(class='ui inverted header',id='title2') share popular, amazing techniques for building a website
             a(class="ui huge primary button",id = 'scrollToContent',value = 'Start') Get Started
                 i(class="right arrow icon")
+
+block content
+    div(class='modal')
     div(ng-view)
 
-    div(id='BackToTop',style='background-color:#DDD')
-        button(class='ui icon button', style='bottom:50px;right:50px;z-index:11;position:fixed;',hidden='true', id='backToTop',value='Back To Top')
+block footer
+    div(id='BackToTop')
+        button(class='ui icon button', hidden='true', id='backToTop',value='Back To Top')
             i(class = 'big angle up icon')
-
-    div(class='ui inverted vertical footer segment',style='margin-top: 10em')
-        div(class='ui container',style='margin-top: 4em; margin-bottom: 4em')
+    div(class='ui inverted vertical footer segment')
+        div(class='ui container',id = "footer_container")
             div(class='ui stackable inverted divided equal height stackable grid')
                 div(class='three wide column')
-                    h4(class='ui inverted header',style='margin-top: 2em') Contact 
+                    h4(class='ui inverted header') Contact 
                     div(class='ui inverted link list')
                         a(class='item') Sitemap
                         a(class='item') Email 
                         a(class='item') Phone 
                 div(class='three wide column')
-                    h4(class='ui inverted header',style='margin-top: 2em') Service
+                    h4(class='ui inverted header') Service
                     div(class='ui inverted link list')
                         a(class='item') Job
                         a(class='item') Work 
                         a(class='item') Career 
-                div(class='three wide column',style='margin-top: 2em')
+                div(class='three wide column')
                      img(class='ui medium image',src='/images/jhu.png')

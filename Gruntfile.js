@@ -43,16 +43,28 @@ module.exports = function(grunt){
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy")%>  */\n',
         sourceMap: true
       },
-      dist:{
+      my_javascript:{
         files: {
           'public/javascripts/app.min.js': ['app/**/*.js']
         }
       }
     },
 
+    cssmin:{
+        options:{
+            shorthandCompacting: false,
+            roundinggPrecision: -1
+        },
+        my_css:{
+            files:{
+                'public/stylesheets/app.min.css':['app/**/*.css']
+            }
+        }
+    },
+
     watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'concat','uglify']
+      files: ['<%= jshint.files %>', 'app/**/*.css'],
+      tasks: ['jshint', 'concat','uglify','cssmin']
     },
 
     copy: {
@@ -83,9 +95,10 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['jshint','concat','uglify']);
+  grunt.registerTask('default', ['jshint','concat','uglify','cssmin']);
   grunt.registerTask('init',['copy']);
-  grunt.registerTask('development',['jshint','concat','uglify','watch']);
+  grunt.registerTask('development',['jshint','concat','uglify','cssmin','watch']);
 };

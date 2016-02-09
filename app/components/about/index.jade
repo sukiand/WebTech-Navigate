@@ -2,8 +2,8 @@ div(class='ui container',style='margin-top: 50px', ng-controller='aboutControlle
     div(class="ui four stackable cards")
         div(class='ui card', ng-repeat='profile in profiles')
             div(class='ui slide masked reveal image')
-                img(src='/images/profile/{{profile.avatar}}', class='visible content')
-                img(src='/images/profile/{{profile.avatar_hidden}}',class='hidden content')
+                img(ng-src='/images/profile/{{profile.avatar}}', class='visible content')
+                img(ng-src='/images/profile/{{profile.avatar_hidden}}',class='hidden content')
             div(class='content')
                 div(class='header') {{profile.name}}
                 div(class='meta') {{profile.title}}
@@ -15,4 +15,4 @@ div(class='ui container',style='margin-top: 50px', ng-controller='aboutControlle
                     a(href='{{profile.linkedin}}') Linkedin
                 div(class='extra')
                     a(href='{{profile.blog}}') GitHub Page
-    div(id='disqus_thread',style='margin-top:100px')
+    div(id='disqus_thread',style='margin-top:200px')

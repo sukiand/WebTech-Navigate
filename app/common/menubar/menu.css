@@ -1,0 +1,29 @@
+* {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+ }
+
+.ui.large.secondary.inverted.pointing.menu {
+    border: 0px;
+}
+
+h1.ui.inverted.header {
+   margin-top: 15px;
+   font-size: 58px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h3.ui.inverted.header {
+   margin-top: 5px;
+   font-size: 22px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#nowl_NO {
+    padding-top: 10px;
+}
+
+
+#scrollToContent {
+    margin-bottom: 10px;
+}
+
