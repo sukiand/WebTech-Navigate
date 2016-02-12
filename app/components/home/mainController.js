@@ -1,6 +1,5 @@
 function MainController($scope, $http,siteService,cloudService) {
   $scope.categories = [];
-
   // siteService.write('hello success');
   siteService.get().then(function (response) {
     $scope.categories = response.data;

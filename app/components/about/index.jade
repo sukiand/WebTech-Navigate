@@ -1,4 +1,4 @@
-div(class='ui container',style='margin-top: 50px', ng-controller='aboutController')
+div(class='ui container')
     div(class="ui four stackable cards")
         div(class='ui card', ng-repeat='profile in profiles')
             div(class='ui slide masked reveal image')
@@ -11,8 +11,8 @@ div(class='ui container',style='margin-top: 50px', ng-controller='aboutControlle
                 div(class='extra') email: {{profile.email}}
                 div(class='extra')
                     a(href='/PDFs/{{profile.resume}}',target='_blank') Resume
-                div(class='extra') 
+                div(class='extra')
                     a(href='{{profile.linkedin}}') Linkedin
                 div(class='extra')
                     a(href='{{profile.blog}}') GitHub Page
-    div(id='disqus_thread',style='margin-top:200px')
+    div(id='disqus_thread')
