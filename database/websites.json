@@ -13,7 +13,7 @@
 {
     "name": "AngularJS",
     "URL": "https://angularjs.rog",
-    "icon": "angularjs.jpg",
+    "icon": "angularjs.png",
     "category": "Front End",
     "language":["javascript"],
     "tags": ["official","front end","js","MVC"],
@@ -25,7 +25,7 @@
 {
     "name": "bootstrap",
     "URL": "http://getbootstrap.com/",
-    "icon": "bootstrap.jpg",
+    "icon": "bootstrap.png",
     "category": "Front End",
     "language":["javascript"],
     "tags":["official","front end","stylesheet"],
@@ -49,7 +49,7 @@
 {
     "name": "Ruby on Rails",
     "URL": "http://rubyonrails.org/",
-    "icon": "ror.jpg",
+    "icon": "ror.png",
     "category": "Backend",
     "language":["ruby"],
     "tags":["official","backend","ror"],
@@ -85,7 +85,7 @@
 {
     "name": "apache",
     "URL": "http://httpd.apache.org/",
-    "icon": "apache.jpg",
+    "icon": "apache.png",
     "category": "Web Server",
     "language": null,
     "tags":["official","server","proxy"],
@@ -97,7 +97,7 @@
 {
     "name": "mySQL",
     "URL": "https://www.mysql.com/",
-    "icon": "mySQL.jpg",
+    "icon": "mySQL.png",
     "category": "Database",
     "language": ["SQL"],
     "tags":["official","database"],
@@ -109,7 +109,7 @@
 {
     "name": "MongoDB",
     "URL": "https://www.mongodb.org/",
-    "icon": "mongodb.jpg",
+    "icon": "mongodb.png",
     "category": "Database",
     "language": ["SQL"],
     "tags":["official","database","NoSQL"],
@@ -133,7 +133,7 @@
 {
     "name":"Django", 
     "URL": "https://www.djangoproject.com/",
-    "icon": "django.jpg",
+    "icon": "django.png",
     "category": "Backend",
     "language": ["python"],
     "tags":["official","framework"],
@@ -145,7 +145,7 @@
 {
     "name": "Grunt", 
     "URL": "http://gruntjs.com/",
-    "icon": "grunt.jpg",
+    "icon": "grunt.png",
     "category": "Tools",
     "language": ["javascrpt"],
     "tags":["official","tool"],
